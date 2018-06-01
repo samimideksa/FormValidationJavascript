@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<!--linking our html to the stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../css/reg.css">
+	<script src="../js/regScript.js"></script>
+</head>
+	<body>
+		<div class="main">
+			<h4>Registration Page*</h4>
+			<form name="form" onsubmit="return validateFormOnSubmit(this)" action="test.html">
+			<b>First name*</b><br>
+			<input type="text" name="firstname" placeholder ="Enter Your First Name">
+			<br><br>
+			<b>Last name*</b><br>
+			<input type="text" name="lastname" placeholder ="Enter Your last Name">
+			<br><br>
+			<b>Email Address*</b><br>
+			<input type="text" name="email" placeholder ="Enter Your email address">
+			<br><br>
+			<b>Phone number*</b><br>
+			<input type="text" name="phone" placeholder ="Enter Your Phone Number">
+			<br><br>
+			<b>Password*</b><br>
+			<input type="password" name="pwd" placeholder ="Enter Your password">
+			<br><br>
+			<b>Conform Password*</b><br>
+			<input type="password" name="cpwd" placeholder ="Enter Your password again">
+			<p id="demo"></p>
+			<!--when submit button is clicked validiation started by calling the method validate()-->
+	  		<input id="button" type="submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>
